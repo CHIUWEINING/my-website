@@ -16,7 +16,7 @@ export default function App() {
         </Routes>
       </main>
       <footer>
-        © {new Date().getFullYear()} Your Name · Built with React
+        © {new Date().getFullYear()} Wei-Ning Chiu's website · Built with React
       </footer>
     </HashRouter>
   );

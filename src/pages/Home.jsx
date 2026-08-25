@@ -173,16 +173,7 @@ export default function Home() {
               <div>
                 <p className="pub-venue">{pub.venue}</p>
                 <p className="pub-title">{pub.title}</p>
-                <p className="pub-authors">
-                  {pub.authors.map((author, i) => (
-                    <span key={i}>
-                      {author.includes('Wei-Ning Chiu')
-                        ? <strong>{author}</strong>
-                        : author}
-                      {i < pub.authors.length - 1 && ', '}
-                    </span>
-                  ))}
-                </p>
+                <p className="pub-authors">{pub.authors.join(', ')}</p>
               </div>
               <div className="pub-arrow"><ArrowIcon /></div>
             </Link>

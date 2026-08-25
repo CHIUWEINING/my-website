@@ -114,7 +114,7 @@ export default function Publications() {
               <p style={{ fontSize: '13px', color: 'var(--muted)', marginBottom: '16px' }}>
                 {pub.authors.map((author, i) => (
                   <span key={i}>
-                    {author.includes('Wei-Ning Chiu')
+                    {author === name
                       ? <strong style={{ color: 'var(--text)', fontWeight: 600 }}>{author}</strong>
                       : author}
                     {i < pub.authors.length - 1 && ', '}
